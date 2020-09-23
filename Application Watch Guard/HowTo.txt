@@ -1,0 +1,56 @@
+Knoton´s Application Watch Guard Version 1.2
+Developer: Kenneth Hedman (knoton)
+Webpage: http://www.iklartext.com
+
+PURPOSE:
+The purpose of this application is to guard choosen applications from going down.
+The Watch Guard checks each X seconds that the choosen application is responding.
+If it is not responding it has either been shutdown, crashed or has frozen.
+First the watch Guard attempts to do a clean shutdown, incase the choosen
+application has some savings of settings during shutdown, After that it terminate
+the process to be on the safe side. Finally it starts up the application again.
+It logs when the applications starts up and goes down.
+The timeout for response is variable through settings
+
+It is mainly for System Administrators who has applications running on machines
+that absolutely is not allowed to be down for a longer period of time.
+But it could benefit anyone who wish to guard a choosen application from going down.
+
+OBSERVERE !
+Application Watch Guard only guard Applications started with Watch Guard.
+It does not guard applications that are already initiated.
+
+LICENSE:
+Application Watch Guard is free for private use.
+If it is being used for commercial purposes you must contact me for licensing.
+However you are free to try it out for a period of one week.
+You can contact me via my webpage above.
+
+HOW TO OPERATE WITH APPLICATION WATCH GUARD:
+
+The Menues:
+
+File:
+Start - Starts all choosen applications and guard them, if running, it changes
+	caption to Pause. If started the application rest in the systray.
+
+Pause - Pause the guard (Does not shutdown the applications)
+
+Add Watch - Adds a application to the list of the applications to guard over.
+
+Read Log - Shows the log
+
+Exit - Shuts down Application Watch Guard
+
+Settings:
+Enable Autostart - if checked the application Watch Guard starts to Guard at start up.
+Timeout - Set the timeout for the watch respons time.
+
+Help:
+HowTo - Shows this help
+Developers Website - Goes to my website
+
+You can remove a choosen application from the guard by marking it and press Delete key.
+You can do that regardless if the guard is running or not.
+It does not shut down the removed application.
+If you wish to shut it down you must do that manually.
